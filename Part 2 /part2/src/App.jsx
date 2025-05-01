@@ -19,7 +19,7 @@ const App = () => {
       .then(initialNotes => {
         setNotes(initialNotes)
       })
-  })
+  },[])
 
   const toggleImportanceOf = id => {
     const note = notes.find(n => n.id === id)
